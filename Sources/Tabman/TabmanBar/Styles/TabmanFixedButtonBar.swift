@@ -12,7 +12,7 @@ import Pageboy
 /// A bar with fixed buttons and line indicator.
 ///
 /// Akin to Instagram notification screen etc.
-internal class TabmanFixedButtonBar: TabmanStaticButtonBar {
+open class TabmanFixedButtonBar: TabmanStaticButtonBar {
 
     // MARK: TabmanBar Lifecycle
     

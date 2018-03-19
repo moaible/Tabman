@@ -10,7 +10,7 @@ import UIKit
 import Pageboy
 
 /// Abstract class for static (non-scrolling) button bars.
-internal class TabmanStaticButtonBar: TabmanButtonBar {
+open class TabmanStaticButtonBar: TabmanButtonBar {
 
     //
     // MARK: Properties
