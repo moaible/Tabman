@@ -16,7 +16,7 @@ open class TabmanFixedButtonBar: TabmanStaticButtonBar {
 
     // MARK: TabmanBar Lifecycle
     
-    public override func construct(in contentView: UIView,
+    open override func construct(in contentView: UIView,
                                    for items: [TabmanBar.Item]) {
         super.construct(in: contentView, for: items)
         

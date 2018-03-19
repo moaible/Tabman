@@ -124,7 +124,7 @@ open class TabmanButtonBar: TabmanBar {
     // MARK: TabmanBar Lifecycle
     //
     
-    public override func construct(in contentView: UIView,
+    open override func construct(in contentView: UIView,
                                    for items: [TabmanBar.Item]) {
         
         self.buttons.removeAll()
@@ -132,7 +132,7 @@ open class TabmanButtonBar: TabmanBar {
         self.edgeMarginConstraints.removeAll()
     }
     
-    public override func update(forAppearance appearance: Appearance,
+    open override func update(forAppearance appearance: Appearance,
                                 defaultAppearance: Appearance) {
         super.update(forAppearance: appearance,
                      defaultAppearance: defaultAppearance)

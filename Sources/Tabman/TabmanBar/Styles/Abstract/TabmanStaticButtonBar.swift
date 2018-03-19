@@ -26,7 +26,7 @@ open class TabmanStaticButtonBar: TabmanButtonBar {
         }
     }
     
-    override var color: UIColor {
+    public override var color: UIColor {
         didSet {
             guard color != oldValue else {
                 return
@@ -39,7 +39,7 @@ open class TabmanStaticButtonBar: TabmanButtonBar {
         }
     }
     
-    override var selectedColor: UIColor {
+    public override var selectedColor: UIColor {
         didSet {
             guard selectedColor != oldValue else {
                 return
@@ -60,7 +60,7 @@ open class TabmanStaticButtonBar: TabmanButtonBar {
     // MARK: Lifecycle
     //
     
-    override func defaultIndicatorStyle() -> TabmanIndicator.Style {
+    open override func defaultIndicatorStyle() -> TabmanIndicator.Style {
         return .line
     }
     
@@ -72,7 +72,7 @@ open class TabmanStaticButtonBar: TabmanButtonBar {
     // MARK: TabmanBar Lifecycle
     //
     
-    public override func add(indicator: TabmanIndicator, to contentView: UIView) {
+    open override func add(indicator: TabmanIndicator, to contentView: UIView) {
         
         contentView.addSubview(indicator)
         indicator.pinToSuperviewEdge(.bottom)
