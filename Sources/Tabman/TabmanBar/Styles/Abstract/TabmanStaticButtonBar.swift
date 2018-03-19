@@ -84,7 +84,7 @@ open class TabmanStaticButtonBar: TabmanButtonBar {
     // MARK: Content
     //
     
-    func addAndLayoutBarButtons(toView view: UIView,
+    internal func addAndLayoutBarButtons(toView view: UIView,
                                 items: [TabmanBar.Item],
                                 customize: TabmanButtonBarItemCustomize) {
         let insets = UIEdgeInsets(top: 0.0,

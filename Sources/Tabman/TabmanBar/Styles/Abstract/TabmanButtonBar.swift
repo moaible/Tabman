@@ -32,7 +32,7 @@ open class TabmanButtonBar: TabmanBar {
     // MARK: Properties
     //
     
-    internal var buttons = [UIButton]()
+    open var buttons = [UIButton]()
     
     internal var horizontalMarginConstraints = [NSLayoutConstraint]()
     internal var edgeMarginConstraints = [NSLayoutConstraint]()
